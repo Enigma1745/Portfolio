@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-color: black;
+    text-decoration: none;
+    color: bisque;
+    font-family: Montserrat;
+}
+
+header {
+    padding:5px;
+}
+
+.color {
+    color: aquamarine;
+}
+
+.links {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav header {
+    display:flex;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.links {
+    font-weight: 500;
+  margin-left: 10px; /* Add spacing between links */
+  border-right: 1px solid #ccc; /* Add a border to the right of each link */
+  padding-right: 10px; /* Add padding to the right of each link */
+  transition: ease 1s;
+}
+
+.nav header nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .links:hover {
+    color: aquamarine;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+}
+
+@keyframes spawn {
+    0% {
+        scale: 0.8;
+        opacity: 0;
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+    animation-name: spawn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.description span {
+    font-weight: 600;
+}
+
