@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
+    height: 100%;
     background-color: black;
     text-decoration: none;
     color: bisque;
     font-family: Montserrat;
-}
-
-header {
-    padding:5px;
 }
 
 .color {
@@ -19,27 +21,33 @@ header {
     color: #ccc;
 }
 
-.nav ul{
+.navbar ul{
     list-style-type: none;
     display: flex;
     justify-content: center;
 }
 
-.nav header {
+.navbar header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:5px;
+    z-index: 999;
     display:flex;
     justify-content: space-between;
     padding-right: 5%;
 }
 
 .links {
-    font-weight: 500;
+  font-weight: 500;
   margin-left: 10px; /* Add spacing between links */
   border-right: 1px solid #ccc; /* Add a border to the right of each link */
   padding-right: 10px; /* Add padding to the right of each link */
   transition: ease 1s;
 }
 
-.nav header nav {
+.navbar header nav {
     display: flex;
     align-items: center;
 }
@@ -64,7 +72,11 @@ nav ul li a{
     }
 }
 
+.main{
+    height: 100vh;
+}
 .description {
+    height: 70vh;
     display: flex;
     align-items: center;
     flex-direction:column;
@@ -78,3 +90,10 @@ nav ul li a{
     font-weight: 600;
 }
 
+.description h2 {
+    font-size: 50px;
+}
+
+.description p{
+    font-size: 20px;
+}
